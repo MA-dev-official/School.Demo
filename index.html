@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>JPS School System</title>
+  
+  <!-- HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+      @theme {
+        --primary-color: #15171f;
+      }
+      body {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+      }
+      html {
+    scroll-behavior: smooth;
+      }
+
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Styles -->
+</head>
+
+<body>
+  <header class="sticky top-0 left-0 z-50 w-full flex p-2 items-center justify-between shadow-xl bg-white/10 backdrop-blur-sm ">
+    <figure class="size-12 ">
+      <img src="/images/logo.png" alt="logo" />
+    </figure>
+    <nav>
+      <a href="/about/" class="text-md text-white font-bold p-2 bg-[var(--primary-color)] rounded-md ">About Us</a>
+      <a href="#footer" class="text-md text-black font-bold p-2 bg-transparent border border-[var(--primary-color)] m-2 rounded-md ">Contact Us</a>
+    </nav>
+  </header>
+  <section id="about" class="w-full flex flex-col items-center justify-center md:flex-row-reverse justify-center">
+    <div class="">
+      <img src="/images/banner.gif" alt="banner" />
+    </div>
+    <div class="w-full text-center p-5">
+      <h1 class="text-purple-700 text-[40px] font-extrabold ">JPS School System</h1>
+      <p class="text-sm text-gray-500">JPS School System is a well‑established educational institution focused on academic excellence and character development.<span class="underline text-gray-800 mx-1"><a href="/about/">more</a></span></p>
+    </div>
+  </section>
+  <section>
+    <div class="w-[90%] bg-gray-100 mx-auto my-10 flex flex-col text-center gap-5 rounded-md p-5">
+     
+    <h2 class="text-[25px] text-orange-400 font-extrabold">Our Location</h2>
+      
+    <div class="w-full h-64 border border-black rounded-md">
+  <iframe
+    src="https://www.google.com/maps?q=JPS%20School%20System,Plot%2090%20Johar,%20Block%20B1%20Phase%201%20Town,%20Lahore,54600&output=embed"
+    width="100%"
+    height="100%"
+    allowfullscreen=""
+    referrerpolicy="no-referrer-when-downgrade" class="rounded-md">
+  </iframe>
+</div>
+    <p class="text-extrabold">📍JPS School System, Plot 90 Johar, Block B1 Block B 1 Phase 1 town, Lahore, 54600</p>  
+      
+    </div>
+  </section>
+  <section class="w-full flex flex-col items-center py-10">
+
+  <!-- Heading -->
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold text-green-400">Our Classes</h2>
+    <p class="text-gray-500 mt-2">Offering structured learning for every stage of education</p>
+  </div>
+
+  <!-- Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+    
+    <!-- Early Years Card -->
+    <div class="max-w-sm p-6 border border-purple-600 rounded-md shadow-sm hover:shadow-md transition duration-300">
+      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/early-years.jpg" alt="Early Years" />
+      <h5 class="mt-2 mb-2 text-2xl font-semibold">
+        Early Years (Playgroup & Nursery)
+      </h5>
+      <p class="text-gray-600">
+        A safe and fun learning environment for children. Creativity and basic skills are nurtured.
+      </p>
+    </div>
+
+    <!-- Primary Card -->
+    <div class="max-w-sm p-6 border border-pink-400 rounded-md shadow-sm hover:shadow-md transition duration-300">
+      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/primary.jpg" alt="Primary" />
+      <h5 class="mt-2 mb-2 text-2xl font-semibold">
+        Primary (Prep & Primary)
+      </h5>
+      <p class="text-gray-600">
+        Focus on foundational academics and social skills. Each student’s learning pace is supported.
+      </p>
+    </div>
+
+    <!-- Secondary Card -->
+    <div class="max-w-sm p-6 border border-blue-300 rounded-md shadow-sm hover:shadow-md transition duration-300">
+      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/secondary.jpg" alt="Secondary" />
+      <h5 class="mt-2 mb-2 text-2xl font-semibold">
+        Secondary (Middle, Secondary & O/A Levels)
+      </h5>
+      <p class="text-gray-600">
+        Advanced academics and exam preparation. Critical thinking and leadership skills are developed.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+    <section>
+      <div class=" bg-gray-50 py-10 px-5 m-5 mb-24">
+
+  <!-- Section Heading -->
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold text-red-500">Our Facilities</h2>
+    <p class="text-gray-500 mt-2">Providing the best environment for student growth</p>
+  </div>
+
+  <!-- Cards -->
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    
+    <div class="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="/images/Spacious.jpg" class="w-full h-40 object-cover" alt="Spacious Classrooms">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Spacious Classrooms</h3>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-green-500 to-green-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="/images/Science.jpg" class="w-full h-40 object-cover" alt="Science & Computer Labs">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Science & Computer Labs</h3>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="/images/Library.jpg" class="w-full h-40 object-cover" alt="Library & Reading Space">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Library & Reading Space</h3>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-orange-500 to-orange-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="/images/Playground.jpg" class="w-full h-40 object-cover" alt="Playground & Sports Facilities">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Playground & Sports Facilities</h3>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-pink-500 to-pink-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="/images/Activity.jpg" class="w-full h-40 object-cover" alt="Activity Rooms">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Activity Rooms</h3>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-teal-500 to-teal-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="/images/Extra-Curricular.jpg" class="w-full h-40 object-cover" alt="">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Extra-Curricular Clubs</h3>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+    </section>
+    <footer id="footer" class="bg-[var(--primary-color)] text-gray-300 py-8 px-5">
+  
+  <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-2">
+    
+    <!-- Left -->
+    <div>
+      <h3 class="text-xl font-semibold text-white mb-3">Contact Us</h3>
+      <p class="flex items-center gap-2">
+        📞 
+        <a href="tel:+923005771577" class="hover:text-white transition">
+          +92 300 577 1577
+        </a>
+      </p>
+      
+      <p class="flex items-center gap-2 mt-2">
+        💬 
+        <a href="https://wa.me/923005771577" target="_blank" class="hover:text-white transition">
+          WhatsApp Chat
+        </a>
+      </p>
+
+      <p class="flex items-center gap-2 mt-2">
+        ✉️ 
+        <a href="mailto:info@jps.edu.pk" class="hover:text-white transition">
+          info@jps.edu.pk
+        </a>
+      </p>
+    </div>
+
+    <!-- Right -->
+    <div class="md:text-right">
+      <h3 class="text-xl font-semibold text-white mb-3">School</h3>
+      <p class="text-sm text-gray-400">
+        Providing quality education with modern facilities and a safe learning environment.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-gray-700 mt-6 pt-4 text-center text-sm text-gray-500">
+    © 2026 All Rights Reserved
+  </div>
+
+</footer>
+  <!-- Project -->
+</body>
+</html>
