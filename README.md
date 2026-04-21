@@ -58,5 +58,5 @@ Open the preview pane to see the site.
 
 ## Deployment
 
-Use Replit's deployment feature to publish the project. The production
+Deployment feature to publish the project. The production
 process should run `npm run build:css && npm start`.
