@@ -27,7 +27,7 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "bash -c 'npx tailwindcss -i ./src/input.css -o ./output.css --watch & python3 -m http.server 5000 --bind 0.0.0.0'"
+args = "bash -c 'npx tailwindcss -i ./src/input.css -o ./output.css --watch & node server.js'"
 waitForPort = 5000
 
 [[ports]]
