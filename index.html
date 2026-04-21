@@ -7,18 +7,20 @@
 
   <title>JPS School System</title>
   
-  <!-- HTML -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"></noscript>
   <link href="/output.css" rel="stylesheet">
+  <link rel="preload" as="image" href="/images/optimized/logo.webp">
   <!-- Styles -->
 </head>
 
 <body>
   <header class="sticky top-0 left-0 z-50 w-full flex p-2 items-center justify-between shadow-xl bg-white/10 backdrop-blur-sm ">
     <figure class="size-12 ">
-      <img src="/images/logo.png" alt="logo" />
+      <img src="/images/optimized/logo.webp" alt="logo" width="48" height="48" decoding="async" />
     </figure>
     <nav>
       <a href="/about/" class="text-md text-white font-bold p-2 bg-[var(--primary-color)] rounded-md ">About Us</a>
@@ -27,7 +29,7 @@
   </header>
   <section id="about" class="w-full flex flex-col items-center justify-center md:flex-row-reverse justify-center">
     <div class="">
-      <img src="/images/banner.gif" alt="banner" />
+      <video src="/images/optimized/banner.mp4" autoplay loop muted playsinline preload="metadata" aria-label="banner" class="w-full"></video>
     </div>
     <div class="w-full text-center p-5">
       <h1 class="text-purple-700 text-[40px] font-extrabold ">JPS School System</h1>
@@ -44,6 +46,8 @@
     src="https://www.google.com/maps?q=JPS%20School%20System,Plot%2090%20Johar,%20Block%20B1%20Phase%201%20Town,%20Lahore,54600&output=embed"
     width="100%"
     height="100%"
+    loading="lazy"
+    title="JPS School System location map"
     allowfullscreen=""
     referrerpolicy="no-referrer-when-downgrade" class="rounded-md">
   </iframe>
@@ -65,7 +69,7 @@
     
     <!-- Early Years Card -->
     <div class="max-w-sm p-6 border border-purple-600 rounded-md shadow-sm hover:shadow-md transition duration-300">
-      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/early-years.jpg" alt="Early Years" />
+      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/optimized/early-years.webp" loading="lazy" decoding="async" width="800" height="600" alt="Early Years" />
       <h5 class="mt-2 mb-2 text-2xl font-semibold">
         Early Years (Playgroup & Nursery)
       </h5>
@@ -76,7 +80,7 @@
 
     <!-- Primary Card -->
     <div class="max-w-sm p-6 border border-pink-400 rounded-md shadow-sm hover:shadow-md transition duration-300">
-      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/primary.jpg" alt="Primary" />
+      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/optimized/primary.webp" loading="lazy" decoding="async" width="800" height="600" alt="Primary" />
       <h5 class="mt-2 mb-2 text-2xl font-semibold">
         Primary (Prep & Primary)
       </h5>
@@ -87,7 +91,7 @@
 
     <!-- Secondary Card -->
     <div class="max-w-sm p-6 border border-blue-300 rounded-md shadow-sm hover:shadow-md transition duration-300">
-      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/secondary.jpg" alt="Secondary" />
+      <img class="rounded-md mb-4 w-full h-40 object-cover" src="/images/optimized/secondary.webp" loading="lazy" decoding="async" width="800" height="600" alt="Secondary" />
       <h5 class="mt-2 mb-2 text-2xl font-semibold">
         Secondary (Middle, Secondary & O/A Levels)
       </h5>
@@ -112,42 +116,42 @@
   <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
     
     <div class="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-      <img src="/images/Spacious.jpg" class="w-full h-40 object-cover" alt="Spacious Classrooms">
+      <img src="/images/optimized/Spacious.webp" loading="lazy" decoding="async" width="800" height="600" class="w-full h-40 object-cover" alt="Spacious Classrooms">
       <div class="p-5">
         <h3 class="text-xl font-semibold">Spacious Classrooms</h3>
       </div>
     </div>
 
     <div class="bg-gradient-to-br from-green-500 to-green-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-      <img src="/images/Science.jpg" class="w-full h-40 object-cover" alt="Science & Computer Labs">
+      <img src="/images/optimized/Science.webp" loading="lazy" decoding="async" width="800" height="600" class="w-full h-40 object-cover" alt="Science & Computer Labs">
       <div class="p-5">
         <h3 class="text-xl font-semibold">Science & Computer Labs</h3>
       </div>
     </div>
 
     <div class="bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-      <img src="/images/Library.jpg" class="w-full h-40 object-cover" alt="Library & Reading Space">
+      <img src="/images/optimized/Library.webp" loading="lazy" decoding="async" width="800" height="600" class="w-full h-40 object-cover" alt="Library & Reading Space">
       <div class="p-5">
         <h3 class="text-xl font-semibold">Library & Reading Space</h3>
       </div>
     </div>
 
     <div class="bg-gradient-to-br from-orange-500 to-orange-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-      <img src="/images/Playground.jpg" class="w-full h-40 object-cover" alt="Playground & Sports Facilities">
+      <img src="/images/optimized/Playground.webp" loading="lazy" decoding="async" width="800" height="600" class="w-full h-40 object-cover" alt="Playground & Sports Facilities">
       <div class="p-5">
         <h3 class="text-xl font-semibold">Playground & Sports Facilities</h3>
       </div>
     </div>
 
     <div class="bg-gradient-to-br from-pink-500 to-pink-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-      <img src="/images/Activity.jpg" class="w-full h-40 object-cover" alt="Activity Rooms">
+      <img src="/images/optimized/Activity.webp" loading="lazy" decoding="async" width="800" height="600" class="w-full h-40 object-cover" alt="Activity Rooms">
       <div class="p-5">
         <h3 class="text-xl font-semibold">Activity Rooms</h3>
       </div>
     </div>
 
     <div class="bg-gradient-to-br from-teal-500 to-teal-700 text-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-      <img src="/images/Extra-Curricular.jpg" class="w-full h-40 object-cover" alt="">
+      <img src="/images/optimized/Extra-Curricular.webp" loading="lazy" decoding="async" width="800" height="600" class="w-full h-40 object-cover" alt="">
       <div class="p-5">
         <h3 class="text-xl font-semibold">Extra-Curricular Clubs</h3>
       </div>
